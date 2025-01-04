@@ -1,3 +1,9 @@
+window.addEventListener("resize", () => {
+  // Pastikan slider tetap berfungsi dengan baik di layar kecil
+  reloadSlider();
+});
+
+
 // Navigasi card ke bagian tertentu
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", function () {
@@ -148,3 +154,4 @@ dots.forEach((li, key) => {
 window.onresize = function (event) {
   reloadSlider();
 };
+
